@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap');
 
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -9,7 +9,6 @@
 
 html,
 body {
-    height: 100vh;
     font-family: "Source Sans Pro", 'Times New Roman';
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -21,7 +20,7 @@ header {
     background-color: #0080ed;
 }
 
-header .container{
+header .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -30,11 +29,11 @@ header .container{
     margin: auto;
 }
 
-header nav ul{
+header nav ul {
     display: flex;
 }
 
-header nav ul li{
+header nav ul li {
     list-style: none;
 }
 
@@ -51,11 +50,11 @@ header nav ul li a:hover {
     background: rgba(255, 255, 255, 0.15);
 }
 
-header .container img{
+header .container img {
     height: 30px;
 }
 
-#checkbox-menu{
+#checkbox-menu {
     display: none;
 }
 
@@ -73,14 +72,14 @@ main .container-main {
     margin: 100px auto 0px auto;
 }
 
-h2{
+h2 {
     color: rgb(0, 0, 0);
     font-size: 45px;
     line-height: 50px;
     font-weight: bold;
 }
 
-h3{
+h3 {
     color: rgb(131, 131, 131);
     font-size: 20px;
     line-height: 28px;
@@ -104,17 +103,27 @@ form input {
 form [type="submit"] {
     background-color: #0080ed;
     color: white;
+    width: 150px;
+    padding-left: 0px;
+    font-size: 16px;
+    height: 40px;
 }
 
 form [type="submit"]:hover {
     cursor: pointer;
+    background-color: rgba(0, 128, 237, 0.75);
+    transform: translateY(-2px);
 }
 
-main .container-main img{
+main .container-main img {
     width: 600px;
 }
 
 /* Cards Session */
+
+a {
+    text-decoration: none;
+}
 
 .cards {
     width: 90%;
@@ -125,7 +134,7 @@ main .container-main img{
     grid-gap: 20px;
 }
 
-.text--medium{
+.text--medium {
     font-size: 16px;
     line-height: 26px;
     font-weight: 400;
@@ -138,9 +147,10 @@ main .container-main img{
     cursor: pointer;
     box-shadow: 5px 5px 15px -4px #000000;
     transition: all 0.3s ease 0s;
+    border-radius: 10px;
 }
 
-.card:hover{
+.card:hover {
     transform: translateY(-7px);
 }
 
@@ -149,6 +159,8 @@ main .container-main img{
     padding-top: 56.25%;
     overflow: hidden;
     position: relative;
+    border-radius: 10px 10px 0 0;
+    height: 225px;
 }
 
 .image img {
